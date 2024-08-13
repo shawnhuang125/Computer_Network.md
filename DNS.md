@@ -1,3 +1,36 @@
 # DNS運作原理及解析
 ## DNS運作原理
+- **用戶發起DNS查詢**
+- 用戶手動輸入網址,查詢資源。
+- **Recursive DNS Server**
+- 透過網路訊號傳送至Recursive DNS Server代為執行後續的DNS查詢步驟,並取得目標資源的IP位址。
+- Recursive DNS Server提供自動化執行DNS查詢的功能。它負責為用戶自動進行網域解析的所有步驟，直到取得最終的IP位址。
+- **Recursive DNS Server運作流程**
+- 1.接收DNS查詢請求
+- 2.檢查緩存
+- 3.返回緩存結果
+- 4.緩存過期或無緩存
+- 5.更新快取並傳回結果
+- **Operation of a recursive DNS server**
+- Recursive DNS Server會依序查詢多個不同的DNS伺服器，直到取得最終的IP位址。
+- **Root DNS server **
+- **Top-level domain name server (TLD server)**
+- **Authoritative DNS server**
+- **The recursive DNS server returns the following result**
+-  Recursive DNS Server會從Authoritative DNS server請求回傳資料並儲存至DNS快取然後傳送給使用者需要的IP address。
+- **User device connection target IP address**
+- Recursive DNS Server會根據快取結果,取得並回傳目標IP位址。
+- **DNS防火墙**
+- 主要功能:
+- 域名過濾和黑名單
+- 內容過濾
+- 防止資料外洩
+- 防禦DNS緩存污染
+- **DNS防火牆與DDoS攻擊防禦**
+- DNS防火牆的作用：透過識別和過濾這些偽造的請求，DNS防火牆可以在一定程度上減少反射攻擊的影響。此外，DNS防火牆可以限制DNS解析器的回應速率，防止放大攻擊對外部的影響。
+- 阻止惡意DNS查詢：攻擊者可能使用DDoS攻擊來癱瘓目標網域的DNS解析。 DNS防火牆可以透過事先配置好的規則來阻止對這些目標網域的惡意查詢，從而減輕攻擊的效果。
+- **用戶設備連接到目標IP位址**
+- 在獲取Target IP Address後,使用者的裝置會發送連線請求並與目標伺服器建立連線。
+- **DNS緩存**
+- 
 ## DNS解析
