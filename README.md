@@ -55,7 +55,7 @@
 - MAC 地址主要在數據鏈路層（Data Link Layer）進行通信，用於標識和傳輸數據到同一個局域網內的設備。
 - IP 地址主要在網絡層（Network Layer）進行通信，用於定位和路由數據包(封包)，使其能夠跨越不同的網絡到達目的地。
 - MAC 地址與 IP 地址的協作：IP 地址負責確定數據包的路徑，而 MAC 地址則負責實際的數據傳輸，特別是在同一局域網內。
-## OSI 模型 (開放式系統互聯模型, Open Systems Interconnection Model)
+## [OSI 模型](https://github.com/shawnhuang125/Computer_Network.md/blob/main/OSI.md) (開放式系統互聯模型, Open Systems Interconnection Model)
 - 定義：OSI 模型是一個概念框架，用來描述網路通信過程中的不同層級架構。它由 7 層組成，從最高層到最低層分別是：
 - 應用層 (Application Layer)：為應用程序提供網路服務，如 HTTP、FTP、SMTP。
 - 表示層 (Presentation Layer)：處理數據的編碼和加密，確保不同系統之間的數據格式一致。
