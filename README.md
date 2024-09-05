@@ -96,6 +96,8 @@
 - 這個的範圍算是在NETWORK LAYER到PRESENTATION LAYER嗎?有圖嗎?
 - TCP/IP 協議套件是互聯網的核心協議，涵蓋了從應用層到物理層的全部通信過程。
 -![image](https://github.com/user-attachments/assets/6c377ce4-b744-473d-b4da-d5b8ce44ee89)
+## HTTP/HTTPS
+### QUESTIONS
 ## 防火牆 (Firewall)
 - 定義：防火牆是一種網路安全設備，用於監控和控制進出網路流量，根據預定的安全規則來允許或阻止數據包的傳輸。
 - 功能：防火牆可以保護網路免受未經授權的訪問和攻擊。
@@ -115,4 +117,3 @@
 - Web 應用防火牆
 - 雲防火牆
 - 無線防火牆
-
