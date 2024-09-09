@@ -15,15 +15,39 @@
 - Wi-Fi：無線數據傳輸協定。
 - 技術實務：
 - VLAN（虛擬局域網）：用來將一個物理網絡劃分為多個虛擬網絡，隔離不同的設備和數據流。
-- MAC地址管理：通過網絡交換機使用MAC地址來確定數據幀的傳送對象。
+#### MAC地址管理：通過網絡交換機使用MAC地址來確定數據幀的傳送對象。
+- MAC地址是長度為48位的二進制數，通常表示為12位十六進制數字，分為6對，每對之間用「:」或「-」分隔。例如：00:1A:2B:3C:4D:5E。
+- MAC地址的功能:
+  - 每一個網路接口再出場的時候都會設定一個MAC地址,它是全球唯一性的。
+  - 主要的功能是用來通訊設備,向IP發送數據需要其MAC地址才可以再數據送到目標IP後在其網段下找到確切裝置進行通訊。
+- 如何看設備的MAC地址:
+  - 1.進入電腦cmd
+  - ![螢幕擷取畫面 2024-09-09 113936](https://github.com/user-attachments/assets/3bce2006-00fb-40fb-a941-28811cb3cc57)
+  - 2.輸入指令
+  ```
+  ipconfig /all
+  ```
+  - ![螢幕擷取畫面 2024-09-09 113655](https://github.com/user-attachments/assets/b27f8b71-ef2e-4203-8810-25d9b48a0bdd)
+  - 3.如果有兩個ETHERNET ADPATER那可以確認哪一個是虛擬網卡,因為虛擬網卡也會有一個MAC地址
+    - 3-1.點擊進入控制台
+    - ![螢幕擷取畫面 2024-09-09 113936](https://github.com/user-attachments/assets/b2d759c8-262b-4aea-b18c-d20d96758902)
+    - 3-2.進入'網路共享中心'
+    - ![螢幕擷取畫面 2024-09-09 114623](https://github.com/user-attachments/assets/260b0a09-fc62-4a95-b8cb-67b028c7c206)
+    - 3-3.進入'變更介面卡設定'
+    - ![螢幕擷取畫面 2024-09-09 114636](https://github.com/user-attachments/assets/a454d39a-1a8c-489b-8880-f0468a27023a)
+    - 3-4.找到'介面卡'看到底下有顯示'Vitualbox'開頭的就是虛擬機產生的介面卡,如果不是'vitualbox'會是你安裝其它的虛擬機名稱。
+    - 這個介面卡的mac地址是虛擬機隨機產生的
+    - ![螢幕擷取畫面 2024-09-09 114644](https://github.com/user-attachments/assets/98b80914-2836-459f-b6ef-e0d5bdd6fca1)
 - 實例：企業內部的有線網絡中，每台設備透過以太網纜線連接交換機，並分配唯一的MAC地址來傳送數據。
 
 2. 網際網路層（Internet Layer）
 - 功能：負責跨不同網絡傳輸數據包，提供IP尋址和路由功能，確保數據能夠到達目標設備。
 - 主要協定：
-- IP（Internet Protocol）：負責IP地址分配及數據包的路由。
-- ARP（Address Resolution Protocol）：將IP地址轉換為MAC地址。
-- ICMP（Internet Control Message Protocol）：用來傳輸錯誤消息和網絡診斷。
+#### IP（Internet Protocol）：負責IP地址分配及數據包的路由。
+#### ARP（Address Resolution Protocol）：將IP地址轉換為MAC地址。
+- ARP是跟DNS類似的概念,每台電腦的作業系統上都有有ARP緩存與DNS緩存的功能。
+- ARP主要是用來轉換IP的MAC地址。
+#### ICMP（Internet Control Message Protocol）：用來傳輸錯誤消息和網絡診斷。
 - 技術實務：
 - IP路由選擇：配置路由器來選擇最佳路徑，通過不同的網絡節點將數據傳送到目標設備。
 - NAT（網絡地址轉換）：將私有IP地址轉換為公共IP地址，使內部設備能通過共享的公共IP訪問外部網絡。
