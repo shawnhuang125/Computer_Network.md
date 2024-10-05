@@ -1,15 +1,12 @@
 # TCP/IP運作原理簡述
-- TCP/IP協議是一個分層結構，用於在不同設備之間進行數據通信。當一台設備需要與另一台設備通信時，數據從應用層開始封裝，經過每一層的處理後到達物理層，最後通過網絡傳輸給目標設備。目標設備會按照相反的順序逐層解封裝數據，直到將數據交付給應用程序。
-## PYSICAL LAYER
-- 
-## DATA LINK LAYER
-- MAC地址
-## INTERNET LAYER
-- DNS解析
-- IP(INTERRNET PORTOCOL)
-- PROT
-- 
-## TRANSPORT LAYER
-- 
-## APPLICATION LAYER
-- 
+- TCP/IP協議是OSI模型的簡化版,是一種網路通訊協議的架構。
+## Network Interface Layer | Physical Layer and Data Link Layer
+- Usage Overview:
+- 包含光纖電纜設備與路由器的供電設備,交換器Vlan運作原理,NAT運作原理,將封包附上MAC地址。
+## Internet Layer |  Network Layer
+- Usage Overview:
+- 給數據包附上路由協議,路由地址與公共IP及Mac Address,NAT等訊息。
+## Transport Layer |  Transport Layer
+- 將加密後的傳輸數據附上序號並排序,切割成封包,或者將封包解封。
+## Application Layer | Application Layer and Presentation Layer and Session Layer
+- 網頁造訪協議,DNS網域解析,數據加密,通訊對話連接
