@@ -8,5 +8,11 @@
 - 給數據包附上路由地址與公共IP,NAT等訊息。路由協議都在這一層。
 ## Transport Layer |  OSI Transport Layer
 - 將加密後的傳輸數據附上序號並排序,切割成封包,或者將封包解封。
+- 有分為TCP數據傳輸和UDP數據傳輸,TCP傳輸的安全性,可靠性比較高,但是數據處理較複雜;UDP的傳輸快,但是可靠性和安全性都比TCP小。
+|通訊協議|TCP|UDP|
+|:-------:|:-------:|:-------:|
+|性質相比|數據處理較複雜,可靠性高,安全性高|傳輸速度較TCP快,可靠性與安全性較TCP差| 
+|主要功能|文件下載,信件寄送,網頁瀏覽|語音通話,視訊通話|
+|協議|HTTP/HTTPS,SMTP,|RTP(Real-Time Transport Portocol),RTCP(Real-Time Transport Control Portocol)|
 ## Application Layer | OSI Application Layer and Presentation Layer and Session Layer
 - 網頁訪問,DNS網域解析,數據加密,通訊對話連接
