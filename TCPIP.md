@@ -11,6 +11,6 @@
 |:-------:|:-------:|:-------:|
 | 性質相比 | 數據處理較複雜,可靠性高,安全性高|傳輸速度較TCP快,可靠性與安全性較TCP差 | 
 | 主要功能 | 文件下載,信件寄送,網頁瀏覽 | 語音通話,視訊通話 |
-| 協議 | HTTP/HTTPS,SMTP, | RTP(Real-Time Transport Portocol),RTCP(Real-Time Transport Control Portocol)|
+| 協議 | HTTP(HyperText Transport Portocol)(網頁訪問)/HTTPS(HyperText Transport Portocol Secure)(安全網頁訪問),FTP(Flies Transport Portocol)(檔案傳輸),SMTP(Simple Mail Transport Portocol)(信件傳輸),IMAP(Internet Mail Access Portocol)(管理信件傳輸),SSH(Secure Shell)(安全遠程登入), | RTP(Real-Time Transport Portocol)(視訊專用),RTCP(Real-Time Transport Control Portocol)(視訊專用)|
 ## Application Layer | OSI Application Layer and Presentation Layer and Session Layer
 - 網頁訪問,DNS網域解析,數據加密,通訊對話連接
