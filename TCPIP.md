@@ -9,4 +9,4 @@
 ## Transport Layer |  OSI Transport Layer
 - 將加密後的傳輸數據附上序號並排序,切割成封包,或者將封包解封。
 ## Application Layer | OSI Application Layer and Presentation Layer and Session Layer
-- 網頁造訪協議,DNS網域解析,數據加密,通訊對話連接
+- 網頁訪問,DNS網域解析,數據加密,通訊對話連接
