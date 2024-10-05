@@ -12,7 +12,7 @@
 | 性質相比 | 數據處理較複雜,可靠性高,安全性高|傳輸速度較TCP快,可靠性與安全性較TCP差 | 
 | 主要功能 | 文件下載,信件寄送,網頁瀏覽 | 語音通話,視訊通話 |
 | 協議 | HTTP(HyperText Transport Portocol)/HTTPS(HyperText Transport Portocol Secure),FTP(Flies Transport Portocol),SMTP(Simple Mail Transport Portocol),IMAP(Internet Mail Access Portocol),SSH(Secure Shell) | RTP(Real-Time Transport Portocol),RTCP(Real-Time Transport Control Portocol)|
-
+### 通訊協議默認端口
 |TCP通訊協議|Portocol|
 |:-------:|:-------:|
 |HTTP(HyperText Transport Portocol)/HTTPS(HyperText Transport Portocol Secure)||
